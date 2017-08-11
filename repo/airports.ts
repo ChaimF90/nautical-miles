@@ -5,8 +5,8 @@ function addAirport(airport: Airport) {
     return knex('airports').insert(airport);
 }
 
-async function getAirports(query: string) {
-    let results = await knex('airports')
+function getAirports(query: string) {
+    let results = knex('airports')
     .select().where('code', 'like', `%${query}%`)
     .orWhere('name', 'like', `%${query}%`)
     .orWhere('city', 'like', `%${query}%`);
