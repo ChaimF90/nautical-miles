@@ -12,6 +12,7 @@ import { router } from './routes/airports';
 app.use('/api', router);
 
 if(process.env.PROD) {
+    console.log('here');
     app.use(express.static(path.join(__dirname, './frontend/build')));
     app.get('*', (req, res) => {
         res.sendFile(path.join(__dirname, './frontend/build/index.html'));
