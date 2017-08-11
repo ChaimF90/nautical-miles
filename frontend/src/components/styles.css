@@ -1,0 +1,29 @@
+.form-container {
+    margin-top: 2%;
+}
+
+.suggestions {
+    cursor: pointer;
+}
+
+.suggestions-active {
+    background-color: lightcoral;
+}
+
+.suggestions:hover {
+    background-color: lightcoral;
+}
+
+.suggestions:focus {
+    background-color: lightcoral;
+}
+
+.map-container {
+    margin-top: 25px;
+    position: relative;
+}
+
+.suggestions-container {
+    height: 250px;
+    overflow: auto;
+}

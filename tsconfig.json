@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        "noImplicitAny": true,
+        "sourceMap": false
+    },"files": [
+        "./custom.d.ts",
+        "./geo.d.ts"
+    ]
+}
