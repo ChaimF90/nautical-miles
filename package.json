@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "heroku:start": "PRDO=true knex migrate:latest && ./node_modules/.bin/ts-node server.ts",
     "start": "nodemon --exec ./node_modules/.bin/ts-node server.ts",
     "start:prod": "PROD=true ./node_modules/.bin/ts-node server.ts"
   },
