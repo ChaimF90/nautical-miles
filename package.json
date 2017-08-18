@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon --exec ./node_modules/.bin/ts-node server.ts",
-    "start:prod": "PROD=true ./node_modules/.bin/ts-node server.ts"
+    "start:prod": "PROD=true ./node_modules/.bin/ts-node server.ts",
+    "migrate": "./node_modules/.bin/knex migrate:latest",
+    "seed": "./node_modules/.bin/ts-node populateDb.ts"
   },
   "keywords": [],
   "author": "",

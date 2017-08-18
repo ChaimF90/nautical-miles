@@ -22,7 +22,7 @@ async function getData() {
     let airports = new Array<any>();
     Object.keys(parsed).forEach(key => {
         airports.push(parsed[key]);
-    })
+    });
     airports = airports.filter(a => a.country === 'US' && a.iata);
     let promises = airports.map(a => {
         const airport: Airport = {
